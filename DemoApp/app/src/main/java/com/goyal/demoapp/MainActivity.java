@@ -5,16 +5,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public void clickFunction(View view) {
-
-        EditText myTextField = (EditText) findViewById(R.id.myTextField);
-        Toast.makeText(this, myTextField.getText().toString(), Toast.LENGTH_SHORT).show();
-
-        Log.i("Info", myTextField.getText().toString());
+    public void imageChangeClick(View view){
+        ImageView myview = (ImageView) findViewById(R.id.myImageView);
+        myview.setImageResource(R.drawable.dota2chest);
     }
 
     @Override
